@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.scss";
+import Cursor1 from "./components/cursor/Cursor1";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App disable-scrollbars">
+      <Cursor1 />
+      <section>
+        <h2>Page 1</h2>
+      </section>
+      <section>
+        <h2>Page 2</h2>
+      </section>
+      <section>
+        <h2>Page 3</h2>
+      </section>
+      <section>
+        <h2>Page 4</h2>
+      </section>
+      <section>
+        <h2>Page 5</h2>
+      </section>
+      <section>
+        <h2>Page 6</h2>
+      </section>
+      <section>
+        <h2>Page 7</h2>
+      </section>
     </div>
   );
 }

@@ -1,0 +1,53 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: red;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  color: white;
+  cursor: none;
+
+  section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+
+    &:nth-of-type(1){
+      background: linear-gradient(129.5deg, #011131 19.38%, #040C1C 85.6%);
+    }
+    &:nth-of-type(2){
+      background: linear-gradient(230.57deg, #040C1C 14.45%, #011131 80.69%);
+    }
+    &:nth-of-type(3){
+      background: linear-gradient(130.38deg, #011131 19.56%, #040C1C 85.63%);
+    }
+    &:nth-of-type(4){
+      background: linear-gradient(230.59deg, #040C1C 14.42%, #011131 80.67%);
+    }
+    &:nth-of-type(5){
+      background: linear-gradient(129.84deg, #011131 19.54%, #040C1C 85.7%);
+    }
+    &:nth-of-type(6){
+      background: linear-gradient(230.57deg, #040C1C 14.45%, #011131 80.69%);
+    }
+    &:nth-of-type(7){
+      background: linear-gradient(129.94deg, #011131 19.47%, #040C1C 85.61%);
+    }
+
+  }
+}
+
+.disable-scrollbars {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+
+  &::-webkit-scrollbar {
+    background: transparent; /* Chrome/Safari/Webkit */
+    width: 0px;
+  }
+}
